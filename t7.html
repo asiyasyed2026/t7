@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="t7.css">
+</head>
+<body>
+  <h1>Expense Tracker</h1>
+
+  <section id="expense-input">
+    <h2>  Add Expense</h2>
+    <form id="expense-form">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" min="0.01" required>
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <option value="Food">Food</option>
+        <option value="Clothes">Clothes</option>
+        <option value="Taxes">Taxes</option>
+        <option value="Gym">Gym</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Transportation">Transportation</option>
+        <option value="Health">Health</option>
+        <option value="Restaurants">Restaurants</option>
+        <option value="Other">Other</option>
+      </select>
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description">
+      <button type="submit">Add Expense</button>
+    </form>
+  </section>
+
+  <section id="expense-list">
+    <h2>Expense List</h2>
+    <ul id="expenses"></ul>
+  </section>
+
+  <section id="expense-summary">
+    <h2>Expense Summary</h2>
+    <p>Total Spent: <span id="total-spent">0.00</span></p>
+  </section>
+
+  <script src="t7.js"></script>
+</body>
+</html>

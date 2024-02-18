@@ -1,0 +1,40 @@
+
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  #expense-input, #expense-list, #expense-summary {
+    border: 15px solid #798866;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  #expense-form label {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  
+  #expenses {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(147, 250, 150);
+  }
+  
+  #expenses li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #493838;
+  }
+  
